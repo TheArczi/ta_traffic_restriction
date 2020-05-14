@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
         --- VEHICLE TRAFFIC ---
         SetTrafficDensity(Config.Vehicle / 100)
 
-        --- PEAOPLE TRAFFIC ---
+        --- PEOPLE TRAFFIC ---
         SetPedDensity(Config.People / 100)
     end
 end)
