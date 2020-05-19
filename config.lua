@@ -1,3 +1,3 @@
 Config = {}
-Config.Vehicle = 30 -- (%) in percent
+Config.Vehicle = 1 -- (%) in percent
 Config.People = 50 -- (%) in percent

@@ -3,6 +3,18 @@
 -- Nie modyfikuj poniżej. Jeśli możesz zmienić wartości zagęszczenia ruchu, przejdź do config.lua
 --================================================================================================
 
+
+local function SetTrafficDensity(density)
+    SetParkedVehicleDensityMultiplierThisFrame(density)
+    SetVehicleDensityMultiplierThisFrame(density)
+    SetRandomVehicleDensityMultiplierThisFrame(density)
+end
+
+local function SetPedDensity(density)
+    SetPedDensityMultiplierThisFrame(density)
+    SetScenarioPedDensityMultiplierThisFrame(density, density)
+end
+
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(1)
